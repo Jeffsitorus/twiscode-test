@@ -1,0 +1,36 @@
+Query Test 1 :
+
+create table transactions(
+   id BIGINT NOT NULL AUTO_INCREMENT,
+   created_order DATETIME NOT NULL,
+   status ENUM('lunas','pending') NOT NULL DEFAULT('pending'),
+   payment_date DATETIME,
+   PRIMARY KEY ( id )
+);
+
+Seed Data :
+
+INSERT INTO transactions(created_order, status, payment_date)
+VALUES ('2020-12-01 18:30:00', 'lunas', '2020-12-01 19:00:00'),
+('2020-12-02 17:30:00', 'pending',null);
+
+Query Test 2 :
+
+create table transaction_details (
+   id BIGINT NOT NULL AUTO_INCREMENT,
+   transaction_id BIGINT NOT NULL UNSIGNED,
+   price INTEGER(11) NOT NULL,
+   qty INTEGER(11) NOT NULL,
+   subtotal DOUBLE,
+   PRIMARY KEY ( id )
+   FOREIGN KEY (transaction_id) REFERENCES transactions(id)
+);
+
+Seed Data
+INSERT INTO transactions(transaction_id,price,qty,subtotal)
+VALUES (1, 10000, 2,20000),
+(2,6250, 4,25000);
+
+Query Test 3 :
+
+SELECT * FROM transactions INNER JOIN transaction_details ON transactions.id=transaction_details.transaction_id; 
