@@ -1,0 +1,367 @@
+{
+	"info": {
+		"_postman_id": "83dab58e-2c2a-4be2-ba11-3deddc9ee8ed",
+		"name": "BACKEND TEST",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CHECK PALINDROME",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "{{base_url}}/check-palindrome",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"check-palindrome"
+					],
+					"query": [
+						{
+							"key": "string",
+							"value": "aku suka makan nasi",
+							"description": "input string",
+							"disabled": true
+						},
+						{
+							"key": "string",
+							"value": "di rumah saya ada kasur rusak",
+							"disabled": true
+						},
+						{
+							"key": "string",
+							"value": "abcde edcbza",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CHECK PALINDROME",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{base_url}}/check-palindrome?string=aku suka makan nasi",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"check-palindrome"
+							],
+							"query": [
+								{
+									"key": "string",
+									"value": "aku suka makan nasi",
+									"description": "input string"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Nov 2021 13:25:09 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Nov 2021 13:25:09 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "Not palindrome"
+				}
+			]
+		},
+		{
+			"name": "Convert Bilangan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/convert-binary-to-decimal/?number=1001",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"convert-binary-to-decimal",
+						""
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "1001",
+							"description": "input number"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Convert Bilangan",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/convert-binary-to-decimal/?number=1001",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"convert-binary-to-decimal",
+								""
+							],
+							"query": [
+								{
+									"key": "number",
+									"value": "1001",
+									"description": "input number"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Nov 2021 12:48:19 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Nov 2021 12:48:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "9"
+				}
+			]
+		},
+		{
+			"name": "Convert Bilangan",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/convert-decimal-to-binary/?number=19",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"convert-decimal-to-binary",
+						""
+					],
+					"query": [
+						{
+							"key": "number",
+							"value": "19",
+							"description": "input number"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Convert Bilangan",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/convert-decimal-to-binary/?number=19",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"convert-decimal-to-binary",
+								""
+							],
+							"query": [
+								{
+									"key": "number",
+									"value": "19",
+									"description": "input number"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Nov 2021 12:56:36 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Nov 2021 12:56:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						}
+					],
+					"cookie": [],
+					"body": "10011"
+				}
+			]
+		},
+		{
+			"name": "Get List Transaction",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/transaction/list",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"transaction",
+						"list"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get List Transaction",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/transaction/list",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"transaction",
+								"list"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Nov 2021 13:41:57 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 08 Nov 2021 13:41:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.4.23"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"transaction_id\": 1,\n            \"price\": 10000,\n            \"qty\": 2,\n            \"subtotal\": 20000,\n            \"created_order\": \"2020-12-01 11:30:00\",\n            \"status\": \"lunas\",\n            \"payment_date\": \"2020-12-01 12:00:00\"\n        },\n        {\n            \"id\": 2,\n            \"transaction_id\": 2,\n            \"price\": 6250,\n            \"qty\": 4,\n            \"subtotal\": 25000,\n            \"created_order\": \"2020-12-02 10:30:00\",\n            \"status\": \"pending\",\n            \"payment_date\": null\n        }\n    ],\n    \"message\": \"success\",\n    \"status\": true\n}"
+				}
+			]
+		}
+	]
+}
